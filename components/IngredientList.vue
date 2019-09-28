@@ -1,7 +1,6 @@
 <template>
   <div class="IngredientList">
-    IngredientList: I am not yet implemented!
-    <IngredientItem />
+    <IngredientItem v-for="(item, index) in list" :key="index" :item="item" />
   </div>
 </template>
 
