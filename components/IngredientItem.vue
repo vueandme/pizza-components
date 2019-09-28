@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <option :value="item.name">
     {{ item.name }}
     <img :src="item.pic" alt="picture goes here" />
-  </div>
+  </option>
 </template>
 
 <script>
