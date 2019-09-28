@@ -1,6 +1,12 @@
 <template>
   <div class="IngredientList">
-    <IngredientItem v-for="(item, index) in list" :key="index" :item="item" />
+    <IngredientItem
+      v-for="(item, index) in list"
+      :key="index"
+      :item="item"
+      :is-selected="item.isSelected"
+      @click="toggleItem(item)"
+    />
   </div>
 </template>
 
@@ -19,6 +25,11 @@ export default {
   },
   async mounted() {
     this.list = await ingredientData()
+  },
+  methods: {
+    toggleItem(item) {
+      item.isSelected = !item.isSelected
+    }
   }
 }
 </script>

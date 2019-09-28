@@ -1,11 +1,7 @@
 <template>
-  <div
-    class="IngredientItem"
-    :class="isSelected ? 'selected' : null"
-    @click="selectItem"
-  >
-    <h1>{{ item.name }}</h1>
+  <div class="IngredientItem" :class="isSelected ? 'selected' : null">
     <img :src="item.pic" />
+    <h1>{{ item.name }}</h1>
   </div>
 </template>
 
@@ -15,18 +11,10 @@ export default {
     item: {
       type: Object,
       default: () => {}
-    }
-  },
-
-  data() {
-    return {
-      isSelected: false
-    }
-  },
-
-  methods: {
-    selectItem() {
-      this.isSelected = true
+    },
+    isSelected: {
+      type: Boolean,
+      default: false
     }
   }
 }
@@ -36,6 +24,7 @@ export default {
 .IngredientItem {
   cursor: pointer;
   margin-bottom: 0.5rem;
+  display: flex;
 }
 h1 {
   font-size: 3rem;
@@ -44,5 +33,10 @@ h1 {
   border-style: solid;
   border-color: blue;
   border-width: 0.2rem;
+}
+img {
+  width: 50px;
+  height: 50px;
+  margin-left: 12px;
 }
 </style>
