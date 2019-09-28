@@ -55,4 +55,8 @@ export default {
 .select-btn {
   margin: 1px red solid;
 }
+
+.fontLarge {
+  font-size: 16px;
+}
 </style>
