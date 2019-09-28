@@ -29,7 +29,7 @@ export default {
   },
   loading: { color: '#fff' },
   css: [],
-  plugins: [],
+  plugins: ['~/plugins/composition-api'],
   buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss'],
   modules: ['@nuxtjs/axios', '@nuxtjs/markdownit'],
   // [optional] markdownit options
@@ -38,12 +38,16 @@ export default {
     preset: 'default',
     linkify: true,
     breaks: true,
-    use: []
+    use: ['markdown-it-prism']
   },
   generate: {
     routes: getDynamicPaths({
       '/docs': 'docs/*.md'
     })
+  },
+  server: {
+    port: 3001, // default: 3000
+    host: '0.0.0.0' // default: localhost
   },
   axios: {},
   build: {

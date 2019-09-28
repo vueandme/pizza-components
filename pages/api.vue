@@ -1,15 +1,15 @@
 <template>
   <div class="container">
-    <IngredientList />
+    <APIIngredientList />
   </div>
 </template>
 
 <script>
-import IngredientList from '@/components/IngredientList'
+import APIIngredientList from '@/components/APIIngredientList'
 
 export default {
   components: {
-    IngredientList
+    APIIngredientList
   }
 }
 </script>
