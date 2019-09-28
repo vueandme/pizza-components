@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <IngredientList />
+    <IngredientList tag="ul" />
   </div>
 </template>
 

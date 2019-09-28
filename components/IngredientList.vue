@@ -1,7 +1,13 @@
 <template>
-  <div class="IngredientList">
-    IngredientList: I am not yet implemented!
-    <IngredientItem />
+  <div :is="tag" class="IngredientList">
+    <IngredientItem
+      v-for="ingredient in list"
+      :id="ingredient.id"
+      :key="ingredient.id"
+      :pic="ingredient.pic"
+      :name="ingredient.name"
+      tag="li"
+    />
   </div>
 </template>
 
@@ -12,6 +18,12 @@ import { ingredientData } from '@/api/data'
 export default {
   components: {
     IngredientItem
+  },
+  props: {
+    tag: {
+      type: String,
+      default: 'div'
+    }
   },
   data() {
     return {
@@ -24,4 +36,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.IngredientList {
+  margin: 1rem;
+}
+</style>
