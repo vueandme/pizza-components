@@ -22,42 +22,12 @@
 </template>
 
 <script>
+import itemMixin from '@/mixins/ItemMixin.js'
 export default {
-  props: {
-    id: {
-      type: Number,
-      default: 0
-    },
-    name: {
-      type: String,
-      required: false,
-      default: 'No name given'
-    },
-    pic: {
-      type: String,
-      required: true
-    },
-    tag: {
-      type: String,
-      default: 'div'
-    }
-  },
-
-  data() {
-    return {
-      selected: false
-    }
-  },
-
+  mixins: [itemMixin],
   computed: {
     picture() {
       return `${this.pic}?_="${Date.now() + Math.random()}"`
-    }
-  },
-
-  methods: {
-    setSelected() {
-      this.selected = !this.selected
     }
   }
 }

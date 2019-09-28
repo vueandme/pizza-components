@@ -13,25 +13,20 @@
 
 <script>
 import IngredientItem from '@/components/IngredientItem'
-import { ingredientData } from '@/api/data'
 
 export default {
   components: {
     IngredientItem
   },
   props: {
+    list: {
+      type: Array,
+      default: () => []
+    },
     tag: {
       type: String,
       default: 'div'
     }
-  },
-  data() {
-    return {
-      list: []
-    }
-  },
-  async mounted() {
-    this.list = await ingredientData()
   }
 }
 </script>
