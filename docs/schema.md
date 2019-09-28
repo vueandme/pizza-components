@@ -199,7 +199,7 @@ You can find a template for the two components in the folder: `componets/Ingredi
 No code is shippend to production without a refactor or two... and now is time to **switch** push your code to git with your name as a branch name, pick a partner and let him/her do the refactor for you while you do the refactor for him/her, no talking between the two are allowed!
 
 - Some ingredients need to be highlited, so they need to be set double the size
-- Now we also need a new component `IngridientDropdown`
+- Now we also need a new component `IngredientDropdown`
 
 > We just let someone else refactor our code without any single test. SHAME! No worries, time to see how to quickly and efficently test our components
 
