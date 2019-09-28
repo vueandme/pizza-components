@@ -1,0 +1,36 @@
+{
+"eslint.validate": [
+  {
+      "language": "vue",
+      "autoFix": true
+  },
+  {
+      "language": "javascript",
+      "autoFix": true
+  },
+  {
+      "language": "javascriptreact",
+      "autoFix": true
+  }
+],
+"editor.formatOnSave": true,
+"vetur.validation.template": false,
+"window.zoomLevel": 0,
+"eslint.autoFixOnSave": true,
+"[html]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[javascript]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[json]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"vetur.format.defaultFormatter.html": "prettier",
+"prettier.disableLanguages": [],
+"[vue]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"files.exclude": {
+  "**/tmp": true
+}
