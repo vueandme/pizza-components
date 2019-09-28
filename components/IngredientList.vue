@@ -1,7 +1,13 @@
 <template>
   <div class="IngredientList">
-    IngredientList: I am not yet implemented!
-    <IngredientItem />
+    <IngredientItem
+      v-for="item in list"
+      :key="item.id"
+      :initialId="item.id"
+      :initialName="item.name"
+      :initialPic="item.pic"
+      :initialIsSelected="false"
+    ></IngredientItem>
   </div>
 </template>
 
