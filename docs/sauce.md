@@ -2,7 +2,7 @@
 
 > Slots: renderless and high order components
 
-Now that we saw the fist tecnique on how to reuse our code and repeat it as less as possible let's have a discussion about it:
+Now that we saw the fist technique on how to reuse our code and repeat it as less as possible let's have a discussion about it:
 
 - What was good?
 - What was less good?
