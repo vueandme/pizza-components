@@ -6,7 +6,7 @@ If there is one key concept here is:
 
 ---
 
-## Single responsability
+## Single responsibility
 
 this should be kept in mind _all the time_ while working on a component structure
 
@@ -22,7 +22,7 @@ We use smart components to implement a piece of business logic and to coordinate
 
 ### Why
 
-We want Business logic to be contained in one single place, following the single responsability principle.
+We want Business logic to be contained in one single place, following the single responsibility principle.
 
 ### How
 
@@ -47,7 +47,7 @@ Smart components do not contain much UI / styles, mostly they aggregate and cond
       }
     },
     mounted() {
-      this.calcualteTime()
+      this.calculateTime()
     },
     methods: {
       ...
@@ -62,15 +62,15 @@ Smart components do not contain much UI / styles, mostly they aggregate and cond
 
 ### When
 
-D.C. are what should be the majority of the compoennts that we design, buttons, list, list elements are all candidate to be dumb components
+D.C. are what should be the majority of the components that we design, buttons, list, list elements are all candidate to be dumb components
 
 ### Why
 
-Once again we want to enforce single responsability pattern as much as possible, delegating the responsability for a piece of ui to a single component
+Once again we want to enforce single responsibility pattern as much as possible, delegating the responsibility for a piece of ui to a single component
 
 ### How
 
-Business logic is banned, D.C. emit events in response to a user action and display a customisable ( or not ) UI portion.
+Business logic is banned, D.C. emit events in response to a user action and display a customizable ( or not ) UI portion.
 
 ### Example
 
@@ -112,7 +112,7 @@ Business logic is banned, D.C. emit events in response to a user action and disp
 
 ### When
 
-Renderless componments are commonnly used to provide shared functionality, or to wrap third party libraries.
+Renderless components are commonly used to provide shared functionality, or to wrap third party libraries.
 
 ### Why
 
@@ -138,7 +138,7 @@ export default {
 ## High order components
 
 > H.O.C. are a way to promote reusability and cleaner code the aim is to take a component and return a new component with added functionality
-> Normaly they are defined like this
+> Usually they are defined like this
 
 ```javascript
 const hoc = component => {
@@ -149,7 +149,7 @@ const hoc = component => {
 }
 ```
 
-But this is an adaptation on how things are done in react, in vue when we want to achieve the same functiionalty we use slots and scoped slots
+But this is an adaptation on how things are done in react, in vue when we want to achieve the same functionally we use slots and scoped slots
 
 ```javascript
 export default {
@@ -183,10 +183,10 @@ How to use the above component? Like this:
 
 ## The exercise
 
-> But now enough basic theory! Time to flex our fingers and crack our nuckles
+> But now enough basic theory! Time to flex our fingers and crack our knuckles
 
 Nico from the future has already prepared his request, by using what we have learned about **Smart** and **Dumb** components we need to create an ingredient list.
-You can find a template for the two components in the folder: `componets/IngredientItem` and `componets/IngredientList` the components are loaded <a href="/schema" target="_blank"> here </a>
+You can find a template for the two components in the folder: `components/IngredientItem` and `components/IngredientList` the components are loaded <a href="/schema" target="_blank"> here </a>
 
 ### The list should include
 
@@ -196,11 +196,11 @@ You can find a template for the two components in the folder: `componets/Ingredi
 
 ## Buddy refactor:
 
-No code is shippend to production without a refactor or two... and now is time to **switch** push your code to git with your name as a branch name, pick a partner and let him/her do the refactor for you while you do the refactor for him/her, no talking between the two are allowed!
+No code is shipped to production without a refactor or two... and now is time to **switch** push your code to git with your name as a branch name, pick a partner and let him/her do the refactor for you while you do the refactor for him/her, no talking between the two are allowed!
 
-- Some ingredients need to be highlited, so they need to be set double the size
+- Some ingredients need to be highlighted, so they need to be set double the size
 - Now we also need a new component `IngredientDropdown`
 
-> We just let someone else refactor our code without any single test. SHAME! No worries, time to see how to quickly and efficently test our components
+> We just let someone else refactor our code without any single test. SHAME! No worries, time to see how to quickly and efficiently test our components
 
 Let's head to [Tasting your components](/docs/tasting)

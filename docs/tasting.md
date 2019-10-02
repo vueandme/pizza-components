@@ -18,21 +18,21 @@ Testing is:
 
 - Necessary
 
-Especially in a compponet world where anything is made by a lot of smaller building blocks, one malfunctioning brick may create a lot of headaches.
+Especially in a component world where anything is made by a lot of smaller building blocks, one malfunctioning brick may create a lot of headaches.
 
 ## What
 
-In general we want to test all our **smart** component and in an ideal world all of our **dumb** components, when the world is not ideal I find usefull to apply insurances company tecnique:
+In general we want to test all our **smart** component and in an ideal world all of our **dumb** components, when the world is not ideal I find useful to apply insurances company technique:
 
 > Evaluate how likely an accident is going to happen and multiply that for the damage that it does
 
 Which translate in the software world in:
 
-> How much this component is used multipled how much is complex / how core is the functionality expressed
+> How much this component is used multiplied how much is complex / how core is the functionality expressed
 
 ## How
 
-In general we want to isolate key aspects of our component, mock anything `around` and test puctually
+In general we want to isolate key aspects of our component, mock anything `around` and test punctually
 
 ### Smart Components
 
@@ -55,7 +55,7 @@ We want to test:
 
 - Events
 - Presence of key dom elements
-- Presence of meaningfull classes
+- Presence of meaningfully classes
 - Response to props
 
 Last three we can solve in one go with snapshot testing.
@@ -73,7 +73,7 @@ We do _not_ want to test:
 
 ## The exercise
 
-Time to add unit testing to our `[IngridientItem, IngridientList, IngridientDropdown]` components! Let's do the first together!
+Time to add unit testing to our `[IngredientItem, IngredientList, IngredientDropdown]` components! Let's do the first together!
 
 > Remember to... Ask questions!
 
@@ -83,8 +83,8 @@ As usual when you are done push all your code to git under your named branch!
 
 Let's shake up our components with a breeze of change!
 
-- Change the props names of `IngridientItem`
-- Change `IngridientList` and `IngridientDropdown` to reverse the order of the list
+- Change the props names of `IngredientItem`
+- Change `IngredientList` and `IngredientDropdown` to reverse the order of the list
 - Refactor the test accordingly
 
 How easy / hard was to refactor the tests?

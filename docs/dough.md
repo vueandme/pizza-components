@@ -2,8 +2,8 @@
 
 > Reuse with mixins
 
-Did you notice something while working on `IngridientDropdown` ? isn't that very similar to `IngridientList` ? don't we have some duplicated methods / computed ?
-I guess we do! The first approach that we are going to explore to DRY up our codebase is by using mixins, let's lay down soome rules / best practices.
+Did you notice something while working on `IngredientDropdown` ? isn't that very similar to `IngredientList` ? don't we have some duplicated methods / computed ?
+I guess we do! The first approach that we are going to explore to DRY up our codebase is by using mixins, let's lay down somme rules / best practices.
 
 ## Mixins do's
 
@@ -84,15 +84,15 @@ It's time to refactor `IngredientList` and `IngredientDropdown` to use a mixin t
 
 ### Testing
 
-Anything that provides a shared behaviour should be extensively tested, so let's not forget to unit test for our new mixin
+Anything that provides a shared behavior should be extensively tested, so let's not forget to unit test for our new mixin
 
-> When you feel confortable push to git
+> When you feel conformable push to git
 
 ## Buddy refactor
 
 Nico from the future is never satisfied, he wants you to:
 
-- remove the sorting on the List and let the sortind be dictated by API
+- remove the sorting on the List and let the sorting be dictated by API
 - add a loading spinner while the API call is being processed on both lists
 
 > Don't forget the tests!

@@ -4,7 +4,7 @@
 
 ## Nesting slots
 
-It's probably not the most gorgeus tecnique nor the most straightforward but it can come in handy to reduce the ammount of code in the codebase. But vue allows to pass a slot inside another slot, to be clear let's see an example
+It's probably not the most gorgeous technique nor the most straightforward but it can come in handy to reduce the amount of code in the codebase. But vue allows to pass a slot inside another slot, to be clear let's see an example
 
 `father`:
 
@@ -44,7 +44,7 @@ It's probably not the most gorgeus tecnique nor the most straightforward but it 
 
 ### Why would you do this
 
-The pattern here is that you may want to wrap a 'smaller' reusable component in another resusable component and need a way to populate the slots of it.
+The pattern here is that you may want to wrap a 'smaller' reusable component in another reusable component and need a way to populate the slots of it.
 Ie: a `Card` component becoming a `FormCard`
 
 ## Mixin factories
@@ -88,11 +88,11 @@ While all of this is true, Components should be seen more as the smallest comple
 
 ### Example
 
-Let's immagine a table component, that allow the users to do data entry. on the column level they can choose the type of the data and this change how the whole column process the input: show different piece of ui, alter the internal and external representation.
+Let's imagine a table component, that allow the users to do data entry. on the column level they can choose the type of the data and this change how the whole column process the input: show different piece of ui, alter the internal and external representation.
 
-By respecting the single responsability principle we end up having a smart component called ie: `SmartCell` ( yay for the naming) that is responsible to coordinate the ui elements based on the column type and the data representation.
+By respecting the single responsibility principle we end up having a smart component called ie: `SmartCell` ( yay for the naming) that is responsible to coordinate the ui elements based on the column type and the data representation.
 
-We write our components and everything works great, now we need to augment the functionality to export the data of the table and save it to the API. A first approach would be to read all the data cell by cell, build up a dictionary row by row and aggregate the dictionaris in an array to represent the table. As it often happens the API data modell does not match completely the model that is covenient for UI needs, so we need to map those objects.
+We write our components and everything works great, now we need to augment the functionality to export the data of the table and save it to the API. A first approach would be to read all the data cell by cell, build up a dictionary row by row and aggregate the dictionaries in an array to represent the table. As it often happens the API data model does not match completely the model that is convenient for UI needs, so we need to map those objects.
 
 A first possible approach would be to aggregate the data 'raw' and then map it on save, but then again, every cell has a dynamic type and each type has different rules of parsing to be accepted by API:
 
@@ -104,12 +104,12 @@ This approach would be:
 Downsides:
 
 - We are iterating two times on a possibly big collection
-- We are violating the single responsability principle by working with the column types on two different area of our code
+- We are violating the single responsibility principle by working with the column types on two different area of our code
 -
 
 #### The crazy approach
 
-- `SmartCell` already knows how to transfrom a user input to the UI model
+- `SmartCell` already knows how to transform a user input to the UI model
 - `SmartCell` already knows how to transform the API data to the UI model
 - `SmartCell` **should also know how to transform UI model to API model!**
 

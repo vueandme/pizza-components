@@ -19,9 +19,9 @@
 
 ## Disclaimer
 
-At any given time feel free to stop Nico's babbling and ask question, criticise or add something.
+At any given time feel free to stop my babbling and ask question, criticize or add something.
 
-> The aim of this workshop is to give **YOU** enough elements to spark a chellenging discussion.
+> The aim of this workshop is to give **YOU** enough elements to spark a challenging discussion.
 
 ## Table of content
 
@@ -35,10 +35,10 @@ At any given time feel free to stop Nico's babbling and ask question, criticise 
 
 ## The story
 
-Finally after a lot of thinkering the good people of Pulilab managed to invent the final drone machine,
+Finally after a lot of tinkering the good people of Pulilab managed to invent the final drone machine,
 To bad that it does not fly, it does not spin, nor it race, but it teleported Nico from the future here.
-As of much of my dismay apparently in 20 years I've dropped software engineering and I own the firt Vue.js
-powered pizzeria in New Zeland.
+As of much of my dismay apparently in 20 years I've dropped software engineering and I own the first Vue.js
+powered pizzeria in New-Zealand.
 
 Nico was in the middle of restructuring his Pizzeria website and decide to enlist the help of you to finish his task.
 Part of the work is already done, much needs to be completed, [let's start](/docs/schema)!

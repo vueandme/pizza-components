@@ -1,26 +1,26 @@
-# Istory of a Calzone
+# History of a Calzone
 
 > Exploiting provide / inject
 
 # Intro
 
-Provide inject is a niche api of vuejs that allows to do the following:
+Provide inject is a niche api of Vue.js that allows to do the following:
 
 - A **Father** component `provides` some functionality ( data, method )
-- A **Child** component `injects` that **Father** functionality no matter how deep is the component in the compoents tree
+- A **Child** component `injects` that **Father** functionality no matter how deep is the component in the components tree
 
 Limitations:
 
 - The data is not reactive ( by design )
-- Father and child need to be in the same componets tree (they can't be sibilings)
+- Father and child need to be in the same components tree (they can't be siblings)
 
-In general is discouraged to use this functionality, but it opens path for reusability and customisation when carefully exploited.
-A pattern that I have been using recently is to reverse the flow by using provide inejct:
+In general is discouraged to use this functionality, but it opens path for reusability and customization when carefully exploited.
+A pattern that I have been using recently is to reverse the flow by using provide inject:
 
 # WHAT? 👀
 
 Yap reversing the flow: Child components feeding data to a Parent component, WITHOUT events AND with reactivity baked in 👀 **Blasphemy**.
-To untagle this twisted concept let me pull in ( a piece of ) the code for the store-locator component of storefront-ui (full code [here](https://github.com/DivanteLtd/storefront-ui/tree/master/packages/vue/src/components/organisms/SfStoreLocator))
+To untangle this twisted concept let me pull in ( a piece of ) the code for the store-locator component of storefront-ui (full code [here](https://github.com/DivanteLtd/storefront-ui/tree/master/packages/vue/src/components/organisms/SfStoreLocator))
 
 ## Store locator
 
@@ -126,7 +126,7 @@ Whenever a new store object is added a `Store` component a new pin appear on the
 
 Nico from the future wants a new component: `PizzaMaker` this components acts as follow:
 
-- Everytime a `IngredientItem` is `selected` the picture of the ingredient is displayed (only one of type)
+- Every time an `IngredientItem` is `selected` the picture of the ingredient is displayed (only one of type)
 - Clicking on the picture remove the Ingredient from the list
 - An Ingredient is selected as long as it is displayed on the `PizzaMaker`
 

@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import loadList from '@/composable/ingriedientFetch'
+import useLoadList from '@/composable/ingriedientFetch'
 import IngredientItem from '@/components/IngredientItem'
 
 export default {
@@ -22,7 +22,7 @@ export default {
     IngredientItem
   },
   setup() {
-    const { sorted, loading, fetch } = loadList()
+    const { sorted, loading, fetch } = useLoadList()
     fetch()
     return { sorted, loading }
   }
