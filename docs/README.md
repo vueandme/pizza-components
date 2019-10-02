@@ -30,8 +30,8 @@ At any given time feel free to stop my babbling and ask question, criticize or a
 - First it was the dough [AKA: reuse with mixins](/docs/dough)
 - And then there was Sauce [AKA: slots: renderless and high order components](/docs/sauce)
 - A practical guide on Ingredients composition [AKA: Component composition tips and tricks](/docs/composition)
-- Istory of a Calzone [AKA: exploiting provide / inject](/docs/calzone)
-- Modern cousine [AKA: Composition API](/docs/modern)
+- History of a Calzone [AKA: exploiting provide / inject](/docs/calzone)
+- Modern cuisine [AKA: Composition API](/docs/modern)
 
 ## The story
 

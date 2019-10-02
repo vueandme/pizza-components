@@ -1,4 +1,4 @@
-# Modern cousine
+# Modern cuisine
 
 > Composition API
 
